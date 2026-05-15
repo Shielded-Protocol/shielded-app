@@ -1,4 +1,13 @@
-import type { ShieldedNote } from '@shielded/core';
+// Inline type until @shielded/core is published and installed
+type ShieldedNote = {
+  secret: bigint;
+  amount: bigint;
+  tokenId: bigint;
+  commitment: string;
+  nullifier: string;
+  index: number | null;
+  spent: boolean;
+};
 
 const NOTES_KEY = 'shielded:notes';
 
