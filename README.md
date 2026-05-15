@@ -1,5 +1,7 @@
 # shielded-app
 
+**Live:** [https://shielded-app-v353.vercel.app](https://shielded-app-v353.vercel.app)
+
 > Next.js 14 frontend for Shielded Protocol.
 
 Part of [Shielded Protocol](https://github.com/Shielded-Protocol) —
