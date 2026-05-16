@@ -104,14 +104,14 @@ function ArrowRightIcon({ className }: { className?: string }) {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-[calc(100vh-4rem)] flex flex-col items-center justify-start overflow-hidden pt-16 md:pt-20">
       {/* Background layers */}
       <div className="absolute inset-0 bg-grid" />
       <div className="absolute inset-0 hero-glow" />
       {/* Radial fade to keep edges dark */}
       <div className="absolute inset-0 bg-radial-[ellipse_at_center] from-transparent via-transparent to-gray-950/80" />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center lg:py-32">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 py-10 sm:py-12 lg:py-16 text-center">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-500/25 bg-emerald-500/5 px-4 py-1.5 text-sm text-emerald-300">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-glow-pulse" />
@@ -126,14 +126,14 @@ function Hero() {
         </h1>
 
         {/* Sub-headline */}
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-gray-400 sm:text-xl">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400 sm:mt-8 sm:text-xl">
           Shield your assets with zero-knowledge proofs on the Stellar blockchain —
           without sacrificing regulatory compliance. Your balance stays invisible.
           Your auditability stays intact.
         </p>
 
         {/* CTAs */}
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:justify-center">
           <a
             href="/portfolio"
             className="group flex items-center gap-2 rounded-xl bg-emerald-500 px-7 py-3.5 text-base font-semibold text-white shadow-xl shadow-emerald-500/25 hover:bg-emerald-400 transition-all hover:shadow-emerald-400/30 hover:-translate-y-0.5"
@@ -150,7 +150,7 @@ function Hero() {
         </div>
 
         {/* Trust chips */}
-        <div className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 sm:mt-14">
           {[
             'Groth16 · BN254',
             'Poseidon Hash',
